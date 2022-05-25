@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon" />
+    <title>Expenses chart component</title>
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <div class="my-balance">
+          <p>My balance</p>
+          <h2>$921.48</h2>
+        </div>
+        <img src="./images/logo.svg" alt="" />
+      </header>
+      <section class="card">
+        <h2 class="headline">Spending - Last 7 days</h2>
+        <div class="graph"></div>
+
+        <template class="template">
+          <div class="value">
+            <p class="day">mon</p>
+            <div class="chart"></div>
+            <div class="mark hide"></div>
+          </div>
+        </template>
+        <div class="total">
+          <div class="left">
+            <p>Total this month</p>
+            <h1>$478.33</h1>
+          </div>
+          <div class="right">
+            <h4>+2.4%</h4>
+            <p>from last month</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
